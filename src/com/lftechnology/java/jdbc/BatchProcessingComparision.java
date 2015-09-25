@@ -38,7 +38,8 @@ public class BatchProcessingComparision {
         try (Statement stmt = con.createStatement();) {
             long start = System.currentTimeMillis();
             for (int i = 0; i < 500; i++) {
-                String query = "insert into user(username, password, fullname) values ('username','password','fullname')";
+                String query = "insert into user(username, password, fullname) values ('username" + i
+                        + "','password','fullname')";
                 stmt.executeUpdate(query);
             }
             System.out.println("Processing with Statement - Time Taken=" + (System.currentTimeMillis() - start));
@@ -65,7 +66,8 @@ public class BatchProcessingComparision {
         try (Statement stmt = con.createStatement();) {
             long start = System.currentTimeMillis();
             for (int i = 0; i < 500; i++) {
-                String query = "insert into user(username, password, fullname) values ('username','password','fullname')";
+                String query = "insert into user(username, password, fullname) values ('username" + i
+                        + "','password','fullname')";
                 stmt.addBatch(query);
                 if (i % 100 == 0) {
                     stmt.executeBatch();
@@ -81,7 +83,7 @@ public class BatchProcessingComparision {
         try (PreparedStatement stmt = con.prepareStatement(sql);) {
             long start = System.currentTimeMillis();
             for (int i = 0; i < 500; i++) {
-                stmt.setString(1, "username");
+                stmt.setString(1, "username"+i);
                 stmt.setString(2, "password");
                 stmt.setString(3, "fullname");
                 stmt.addBatch();

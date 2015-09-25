@@ -16,8 +16,8 @@ public class DBConnection {
     private static final Logger LOGGER = Logger.getLogger(DBConnection.class.getName());
     
     private static final String MYSQL_DRIVER="com.mysql.jdbc.Driver";
-    //private static final String MYSQL_CONNECTION_STRING="jdbc:mysql://localhost:3306/playground";
-    private static final String MYSQL_CONNECTION_STRING="jdbc:mysql://localhost:3306/playground?rewriteBatchedStatements=true";
+    private static final String MYSQL_CONNECTION_STRING="jdbc:mysql://localhost:3306/playground";
+    //private static final String MYSQL_CONNECTION_STRING="jdbc:mysql://localhost:3306/playground?rewriteBatchedStatements=true";
     private static final String USERNAME="root";
     private static final String PASSWORD="liferay";
     
