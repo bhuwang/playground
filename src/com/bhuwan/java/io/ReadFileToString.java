@@ -56,7 +56,7 @@ public class ReadFileToString {
     }
 
     private static String readUsingApacheCommonsIO(String fileName) throws IOException {
-        return FileUtils.readFileToString(new File(fileName), StandardCharsets.UTF_8);
+        return FileUtils.readFileToString(new File(fileName), StandardCharsets.UTF_8.name());
     }
 
     private static String readUsingScanner(String fileName) throws IOException {
