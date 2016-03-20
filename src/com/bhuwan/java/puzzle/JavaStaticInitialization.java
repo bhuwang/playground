@@ -8,6 +8,7 @@ package com.bhuwan.java.puzzle;
  *
  */
 class JavaStaticInitialization {
+    @SuppressWarnings("static-access")
     public static void main(String[] args) {
         StaticNullTest staticClassObject = null;
         staticClassObject.staticMethod();
