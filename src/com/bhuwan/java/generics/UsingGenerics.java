@@ -11,7 +11,7 @@ import java.util.logging.Logger;
  */
 public class UsingGenerics {
 
-    private static final Logger log = Logger.getLogger(WithouUsingGenerics.class.getName());
+    private static final Logger log = Logger.getLogger(WithoutUsingGenerics.class.getName());
 
     public static void main(String args[]) {
 

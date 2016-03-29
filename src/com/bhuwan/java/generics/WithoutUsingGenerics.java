@@ -11,9 +11,9 @@ import java.util.logging.Logger;
  * 
  * @author bhuwan
  */
-public class WithouUsingGenerics {
+public class WithoutUsingGenerics {
 
-    private static final Logger log = Logger.getLogger(WithouUsingGenerics.class.getName());
+    private static final Logger log = Logger.getLogger(WithoutUsingGenerics.class.getName());
 
     @SuppressWarnings({ "rawtypes", "unchecked" })
     public static void main(String args[]) {

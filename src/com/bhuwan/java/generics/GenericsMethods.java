@@ -10,7 +10,7 @@ import java.util.logging.Logger;
  */
 public class GenericsMethods {
 
-    private static final Logger log = Logger.getLogger(WithouUsingGenerics.class.getName());
+    private static final Logger log = Logger.getLogger(WithoutUsingGenerics.class.getName());
 
     // Generics in method
     public static <T> boolean isEqual(GenericsType<T> g1, GenericsType<T> g2) {
