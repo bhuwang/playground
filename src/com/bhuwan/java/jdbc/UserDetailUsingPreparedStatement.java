@@ -19,6 +19,7 @@ public class UserDetailUsingPreparedStatement {
     /**
      * @param args
      */
+    @SuppressWarnings("resource")
     public static void main(String[] args) {
         String username = null;
         String password = null;
