@@ -3,6 +3,8 @@
  */
 package com.bhuwan.java.puzzle;
 
+import java.math.BigDecimal;
+
 /**
  * @author bhuwan
  *
@@ -46,6 +48,12 @@ public class FloatingPointPuzzle {
             sum += 0.1;
         }
         System.out.println(sum);
+
+        BigDecimal sumOne = new BigDecimal(0);
+        for (int i = 0; i < 10; i++) {
+            sumOne = sumOne.add(new BigDecimal(0.1));
+        }
+        System.out.println(sumOne);
     }
 
 }
