@@ -54,6 +54,17 @@ public class FloatingPointPuzzle {
             sumOne = sumOne.add(new BigDecimal(0.1));
         }
         System.out.println(sumOne);
+
+        // using strictfp class
+        System.out.println("using strictfp: " + sum10DecimalNumbers());
+    }
+
+    public strictfp static double sum10DecimalNumbers() {
+        double sum = 0;
+        for (int i = 0; i < 10; i++) {
+            sum += 0.1;
+        }
+        return sum;
     }
 
 }
