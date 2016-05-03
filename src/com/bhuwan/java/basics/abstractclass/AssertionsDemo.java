@@ -16,7 +16,6 @@ public class AssertionsDemo {
         int i = 10;
         assert (i == 11) : "here x value should be equal to 10";
         System.out.println(i);
-        
     }
 
 }
