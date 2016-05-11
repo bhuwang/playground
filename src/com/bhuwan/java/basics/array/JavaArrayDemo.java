@@ -42,7 +42,7 @@ public class JavaArrayDemo {
         fruits[1] = 122;
         fruits[2] = 1662;
         fruits[3] = 142;
-
+       
         // Multi-Dimensional Array
         int sudoku[][] = { { 2, 1, 3 }, { 1, 3, 2 }, { 3, 2, 1 } };
         
