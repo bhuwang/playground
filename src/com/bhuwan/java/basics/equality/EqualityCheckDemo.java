@@ -21,11 +21,11 @@ public class EqualityCheckDemo {
         System.out.println(name == name3);
         System.out.println(name.equals(name3));
 
-        Integer number = 128;
-        int number2 = 128;
-        Integer number3 = 128;
-        Integer number4 = new Integer(128);
-        Integer number5 = new Integer(128);
+        Integer number = 122;
+        int number2 = 122;
+        Integer number3 = 122;
+        Integer number4 = new Integer(122);
+        Integer number5 = new Integer(122);
 
         System.out.println("\n\nInteger Equality Check........");
         System.out.println(number == number2);
@@ -33,8 +33,7 @@ public class EqualityCheckDemo {
         System.out.println(number == number4);
         System.out.println(number4 == number5);
         System.out.println(number2 == number4);
-        
-        
+
         // strange
         System.out.println("\n\nInteger Equality Check Strange........");
         Integer number7 = 128;
