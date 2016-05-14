@@ -14,25 +14,25 @@ public class PrimitiveDemo {
 
         // Adding 1 to max value
         byte aa = 127;
-        aa = (byte)(aa + 1);
+        aa = (byte) (aa + 1);
         System.out.println(aa);
 
         // Subtracting 1 to min value
         aa = -128;
-        aa = (byte)(aa - 1);
+        aa = (byte) (aa - 1);
         System.out.println(aa);
 
         assert aa >= 130;
 
-        if(Integer.MAX_VALUE + 1 == Integer.MIN_VALUE){
+        if (Integer.MAX_VALUE + 1 == Integer.MIN_VALUE) {
             System.out.println("Integer.MAX_VALUE + 1 == Integer.MIN_VALUE");
         }
-        
-        if(Integer.MIN_VALUE - 1 == Integer.MAX_VALUE){
+
+        if (Integer.MIN_VALUE - 1 == Integer.MAX_VALUE) {
             System.out.println("Integer.MIN_VALUE - 1 == Integer.MAX_VALUE");
         }
-        
+
         // modulo exception when right hand operand zero
-        int a = 4 % 0;
+        // int a = 4 % 0;
     }
 }

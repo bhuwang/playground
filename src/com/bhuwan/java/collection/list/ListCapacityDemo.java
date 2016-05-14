@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @author bhuwan
  *
  */
-public class ListCapacityDemo {
+final public class ListCapacityDemo {
 
     /**
      * @param args
@@ -27,6 +27,12 @@ public class ListCapacityDemo {
         System.out.println();
         System.out.println("List: " + list);
         
+        ListCapacityDemo demo = new ListCapacityDemo();
+        demo.m1();
+    }
+    
+    public void m1(){
+        System.out.println("method m1 executed......");
     }
 
 }
