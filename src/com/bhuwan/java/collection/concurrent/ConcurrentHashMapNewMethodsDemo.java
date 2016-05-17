@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * @author bhuwan
  *
  */
-public class ConcurrentNewMethodsDemo {
+public class ConcurrentHashMapNewMethodsDemo {
 
     /**
      * @param args

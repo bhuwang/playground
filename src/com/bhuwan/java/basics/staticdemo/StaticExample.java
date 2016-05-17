@@ -22,6 +22,10 @@ public class StaticExample {
         System.out.println("StaticExample static block2");
     }
 
+    {
+        System.out.println("Hi Hello Hi");
+    }
+
     // static variable example
     private static int count; // kept private to control it's value through
                               // setter

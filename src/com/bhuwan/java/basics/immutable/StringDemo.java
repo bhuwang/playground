@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.bhuwan.java.basics.mutable;
+package com.bhuwan.java.basics.immutable;
 
 /**
  * @author bhuwan

@@ -9,8 +9,8 @@ import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
- * This class demonstrate the concurrent modification exception when two different threads working on the same list. Here child thread is
- * modifying the list and main tread trying to iterate the same list. Hence, CME will be occurred.
+ * This class demonstrate the concurrent modification exception when two different threads working on the same map. Here child thread is
+ * modifying the map and main tread trying to iterate the same map. Hence, CME will be occurred.
  * 
  * @author bhuwan
  *

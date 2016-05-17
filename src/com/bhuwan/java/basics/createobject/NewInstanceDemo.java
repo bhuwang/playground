@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.bhuwan.java.basics.newinstance;
+package com.bhuwan.java.basics.createobject;
 
 /**
  * @author bhuwan
