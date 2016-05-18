@@ -52,6 +52,8 @@ public class CreateObjectDemo {
         Runtime runtime = Runtime.getRuntime();
         DateFormat instance2 = DateFormat.getInstance();
         Calendar instance = Calendar.getInstance();
+        Test1 test6 = Test1.getInstance();
+        System.out.println(test6.m1("4. Using factory method."));
 
         // 5. Using Clone method.
         // you must have to override the clone() method.
@@ -68,17 +70,15 @@ public class CreateObjectDemo {
         ObjectInputStream ois = new ObjectInputStream(fis);
         Test1 test5 = (Test1) ois.readObject();
         System.out.println(test5.m1("6. Using deserialization"));
-
     }
 
 }
 
 class Test1 implements Cloneable, Serializable {
 
-    /**
-     * 
-     */
     private static final long serialVersionUID = 482351728504309257L;
+
+    private static Test1 currentInstance = new Test1();
 
     public Test1() {
     }
@@ -95,4 +95,9 @@ class Test1 implements Cloneable, Serializable {
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
     }
+
+    public static Test1 getInstance() {
+        return currentInstance;
+    }
+
 }
