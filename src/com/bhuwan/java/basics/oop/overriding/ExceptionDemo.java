@@ -28,7 +28,7 @@ public class ExceptionDemo extends ExceptionClass {
 
     }
 
-    public void m4() throws IOException {
+    public void m4() throws Exception {
 
     }
 }
@@ -48,7 +48,7 @@ class ExceptionClass {
 
     }
 
-    public void m4() throws IOException {
+    public void m4() throws Throwable {
 
     }
 }

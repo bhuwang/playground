@@ -10,9 +10,9 @@ package com.bhuwan.java.basics.oop.overriding;
 public class OverridingNonStaticMethodAsStatic extends NonStaticClass {
 
     // we cann't override non static method as static.
-    /*@Override
-    public static void m1() {
-    }*/
+    /*
+     * @Override public static void m1() { }
+     */
 }
 
 class NonStaticClass {

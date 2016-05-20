@@ -20,7 +20,7 @@ public class AccessingInnerClassMethodFromOuterClassMethod {
         System.out.println("Outer class method.");
 
         // accessing inner class object from outer class method is a lot more easier way
-        // since the outer class object is already created in main we don't need to recreat it again.
+        // since the outer class object is already created in main we don't need to recreate it again.
         new Inner().in();
     }
 

@@ -36,9 +36,27 @@ public class ParentChildOverloadingDemo {
 }
 
 class Animal {
+    {
+        System.out.println();
+        System.out.println("Parent instance block");
+    }
 
+    public Animal() {
+        System.out.println("Parent constructor called......");
+    }
 }
 
 class Monkey extends Animal {
+    {
+        System.out.println();
+        System.out.println("Child instance block");
+    }
 
+    public Monkey() {
+        System.out.println("Child Constructor called.....");
+    }
+
+    public void m1() {
+        System.out.println("Inside Monkey m1() method.");
+    }
 }

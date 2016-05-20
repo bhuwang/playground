@@ -20,7 +20,7 @@ public class CovariantDemo {
 }
 
 class ParentC {
-    public Object m1() {
+    public Number m1() {
         return null;
     }
 }
@@ -28,7 +28,7 @@ class ParentC {
 class ChildC extends ParentC {
     // since jdk 1.5 you can also return the child object instead of parent object.
     @Override
-    public String m1() {
+    public Integer m1() {
         return null;
     }
 }

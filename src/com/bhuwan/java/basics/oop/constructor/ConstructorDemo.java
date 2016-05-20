@@ -4,13 +4,17 @@
 package com.bhuwan.java.basics.oop.constructor;
 
 /**
+ * <pre>
+ * 
+ * </pre>
+ * 
  * @author bhuwan
  *
  */
 public class ConstructorDemo {
 
     public ConstructorDemo() {
-        System.out.println("First line should be super");
+        System.out.println("First line should be super or this");
         // this(5);
     }
 
@@ -36,5 +40,7 @@ public class ConstructorDemo {
 }
 
 abstract class AbstractClass {
-    //
+    // Abstract class also can have constructor
+    public AbstractClass() {
+    }
 }

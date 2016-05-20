@@ -10,6 +10,16 @@ package com.bhuwan.java.basics.oop.overriding;
 public class OverridingDemo {
 
     /**
+     * <pre>
+     * Overriding: Parent object is completely gone and overridden by child method.
+     * Method Hiding: Only hiding the parent method by child method (Both the methods are available). You can get child method by child reference 
+     * and parent method by parent reference.
+     *  
+     * Thump Rules:
+     * 1. In overriding method resolution is always based on runtime object.
+     * 2. In overloading method resolution is always based on reference object.
+     * </pre>
+     * 
      * @param args
      */
     public static void main(String[] args) {
@@ -18,6 +28,7 @@ public class OverridingDemo {
         p.marriage();
 
         ChildClass c = new ChildClass();
+        c.property();
         c.marriage();
 
         ParentClass p1 = new ChildClass();
@@ -35,7 +46,7 @@ class ParentClass {
     }
 
     public void marriage() {
-        System.out.println("Marriage with Rekha Thaa.");
+        System.out.println("Marriage with Rekha Thapa.");
     }
 }
 
