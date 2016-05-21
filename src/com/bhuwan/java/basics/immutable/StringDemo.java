@@ -4,6 +4,9 @@
 package com.bhuwan.java.basics.immutable;
 
 /**
+ * Without using new operator it is possible to create a object for the classes. Such type of classes objects we can called it as
+ * first-class objects.
+ * 
  * @author bhuwan
  */
 public class StringDemo {
@@ -15,7 +18,7 @@ public class StringDemo {
         name.concat(" My Address");
         System.out.println("name: " + name);
         // name = name.concat(" My Address 2");
-        //System.out.println("name: " + name);
+        // System.out.println("name: " + name);
 
         // immutable class
         StringBuffer name1 = new StringBuffer("Bhuwan Gautam2");

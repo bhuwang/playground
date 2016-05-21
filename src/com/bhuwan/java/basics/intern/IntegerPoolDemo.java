@@ -6,6 +6,9 @@ package com.bhuwan.java.basics.intern;
 import java.io.Serializable;
 
 /**
+ * Without using new operator it is possible to create a object for the classes. Such type of classes objects we can called it as
+ * first-class objects.
+ * 
  * @author bhuwan
  *
  */
