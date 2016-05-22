@@ -13,7 +13,7 @@ import java.io.IOException;
 // Thumb rule here is if the child class throws any exception then parent class must throw the same or parent class of the exception
 // ie. if child class throws IOException then parent class method can throws IOException|Exception|Throwable
 // this rule is only applicable for checked exception only
-public class ExceptionDemo extends ExceptionClass {
+public class ExceptionDemo extends ParentExceptionClass {
 
     @Override
     public void m1() throws VirtualMachineError {
@@ -34,7 +34,7 @@ public class ExceptionDemo extends ExceptionClass {
 }
 
 // parent class
-class ExceptionClass {
+class ParentExceptionClass {
 
     public void m1() throws OutOfMemoryError {
 

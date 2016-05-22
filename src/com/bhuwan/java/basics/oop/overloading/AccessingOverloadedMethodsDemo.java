@@ -4,12 +4,24 @@
 package com.bhuwan.java.basics.oop.overloading;
 
 /**
+ * <pre>
+ * Automatic Promotion in Overloading
+ * 
+ * Automatic Promotion Order:
+ * byte-> short -> int -> long -> float -> double 
+ * 
+ * char -> int -> long -> float -> double
+ *
+ * </pre>
+ * 
  * @author bhuwan
  *
  */
 public class AccessingOverloadedMethodsDemo {
 
     /**
+     * Automatic Promotion in Overloading
+     * 
      * @param args
      */
     public static void main(String[] args) {
