@@ -14,12 +14,12 @@ package com.bhuwan.java.basics.immutable;
  * @author bhuwan
  *
  */
-final public class CustomImmutableClass {
+final public class FinalClassDemo {
 
     private final String name;
     private final long id;
 
-    public CustomImmutableClass(long id, String name) {
+    public FinalClassDemo(long id, String name) {
         this.id = id;
         this.name = name;
     }

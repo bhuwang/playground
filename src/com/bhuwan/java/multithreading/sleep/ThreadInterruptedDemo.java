@@ -28,7 +28,7 @@ class LazyThread extends Thread {
             for (int i = 0; i < 10; i++) {
                 System.out.println("I am a lazy thread.");
 
-                Thread.sleep(2000);
+                Thread.sleep(12000);
                 System.out.println("I got Interrupted!!");
 
             }
