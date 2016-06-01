@@ -19,6 +19,7 @@ public class FinalVariableDemo {
         System.out.println(name);
         // if you try to reassign then the compiler is gonna throw compiletime error.
         // name = new StringBuffer("Prisha Gauatm");
+
     }
 
 }

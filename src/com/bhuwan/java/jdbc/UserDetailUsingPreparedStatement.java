@@ -34,9 +34,7 @@ public class UserDetailUsingPreparedStatement {
         String sql = "insert into user(username, password, fullname) values('bhuwan@gmail.com','password','Bhuwan Gautam')";
         sql = "select * from user where username=? and password=?";
         System.out.println("Final Query:: " + sql);
-        try (Connection con = DBConnection.getMySqlConnection();
-                PreparedStatement stmt = con.prepareStatement(sql);
-                ) {
+        try (Connection con = DBConnection.getMySqlConnection(); PreparedStatement stmt = con.prepareStatement(sql);) {
             stmt.setString(1, username);
             stmt.setString(2, password);
             ResultSet rs = stmt.executeQuery();
@@ -49,8 +47,7 @@ public class UserDetailUsingPreparedStatement {
                 System.out.println("Username or Password not matched.");
             }
             LOGGER.info("Updated successfully");
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
             LOGGER.info("Expection occured while Updating - " + e.getMessage());
         }
