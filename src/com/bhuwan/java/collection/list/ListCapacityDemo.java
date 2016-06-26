@@ -18,21 +18,15 @@ final public class ListCapacityDemo {
 
         ArrayList<Integer> list = new ArrayList<>();
         // List has no way to check the capacity.
-        //System.out.println("Initail Capacity: " + list.capacity());
+        // System.out.println("Initail Capacity: " + list.capacity());
         list.ensureCapacity(12);
-        
+
         for (int i = 1; i <= 12; i++) {
             list.add(i);
         }
         System.out.println();
         System.out.println("List: " + list);
-        
-        ListCapacityDemo demo = new ListCapacityDemo();
-        demo.m1();
-    }
-    
-    public void m1(){
-        System.out.println("method m1 executed......");
+
     }
 
 }

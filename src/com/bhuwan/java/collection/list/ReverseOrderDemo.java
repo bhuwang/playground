@@ -5,6 +5,7 @@ package com.bhuwan.java.collection.list;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -37,6 +38,20 @@ public class ReverseOrderDemo {
 
         System.out.println();
         System.out.println("reverse list: " + list);
+
+        // if I have to reverse the list using natural sorting order of number
+        Collections.sort(list);
+        System.out.println();
+        System.out.println("Natural sorting order: " + list);
+    }
+
+}
+
+class ReverseCustomComparator implements Comparator<Integer> {
+
+    @Override
+    public int compare(Integer o1, Integer o2) {
+        return o2.compareTo(o1);
     }
 
 }

@@ -10,7 +10,7 @@ package com.bhuwan.java.basics.innerclasses;
 public class OuterClassWithMainMethodDemo {
 
     /**
-     * Inner class name syntax: Inner$Outer
+     * Inner class name syntax: Outer$Inner
      * 
      * @param args
      */

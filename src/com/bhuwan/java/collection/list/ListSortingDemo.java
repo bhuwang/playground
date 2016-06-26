@@ -38,6 +38,12 @@ public class ListSortingDemo {
 
         // custom sorting, reverse of natural sorting.
         Collections.sort(list, new ListCustomComparator());
+        System.out.println("after using comparator: " + list);
+
+        // will provide the reverse order comparator
+        Comparator<Object> reverseOrder = Collections.reverseOrder();
+
+        Collections.sort(list, reverseOrder);
         System.out.println("List after custom sorting[reverse of natural order]: " + list);
 
     }

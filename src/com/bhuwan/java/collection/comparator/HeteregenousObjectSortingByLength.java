@@ -29,6 +29,7 @@ public class HeteregenousObjectSortingByLength implements Comparator<Object> {
         names.add(new StringBuffer("Yaju"));
         names.add("Suman");
         names.add("Sampurna");
+        names.add("AAAAAAAAAA");
         names.add("Prashiddhi");
         System.out.println(names);
     }

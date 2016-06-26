@@ -18,6 +18,10 @@ import java.util.List;
  */
 public class IteratorDemo {
 
+    private IteratorDemo() {
+
+    }
+
     /**
      * @param args
      */

@@ -26,8 +26,8 @@ public class PropertiesDemo {
         System.out.println(prop);
 
         System.out.println("user: " + prop.getProperty("user"));
-        prop.setProperty("pass", "password1234");
-        prop.store(new FileOutputStream("src/com/bhuwan/java/collection/hashtable/application.properties"), "Updated by Bhuwan Gautam");
+        prop.setProperty("pass", "password12345678");
+        prop.store(new FileOutputStream("src/com/bhuwan/java/collection/hashtable/application.properties"), "Updated by Suman Gurung");
     }
 
 }
