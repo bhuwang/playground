@@ -21,7 +21,7 @@ public class SeriliazationDemo {
      * @throws ClassNotFoundException
      */
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-        Accounts acc = new Accounts();
+        CustomizedSerialization acc = new CustomizedSerialization();
         System.out.println("Before Serialization: user - " + acc.getUsername() + " pass - " + acc.getPassword());
 
         // serialize
@@ -32,7 +32,7 @@ public class SeriliazationDemo {
         // de-serialize
         FileInputStream fis = new FileInputStream("abc.ser");
         ObjectInputStream ois = new ObjectInputStream(fis);
-        Accounts account = (Accounts) ois.readObject();
+        CustomizedSerialization account = (CustomizedSerialization) ois.readObject();
 
         // print the value
         System.out.println("After Serialization: user - " + account.getUsername() + " pass - " + account.getPassword());

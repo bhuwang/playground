@@ -11,7 +11,7 @@ import java.io.Serializable;
  * @author bhuwan
  *
  */
-public class Accounts implements Serializable {
+public class CustomizedSerialization implements Serializable {
 
     /**
      * 
