@@ -10,6 +10,27 @@ import java.lang.reflect.Method;
  * @author bhuwan
  *
  */
+public class LoadedClassDetailsDemo {
+
+    @SuppressWarnings("rawtypes")
+    public static void main(String[] args) throws ClassNotFoundException {
+        // Class student = Student.class;
+        Class student = Class.forName("com.bhuwan.java.jvm.loading.StudentOne");
+        Method[] declaredMethods = student.getDeclaredMethods();
+        for (Method method : declaredMethods) {
+            System.out.println("Method Names:");
+            System.out.print("\t" + method);
+        }
+
+        System.out.println();
+        System.out.println("Fields:");
+        Field[] declaredFields = student.getDeclaredFields();
+        for (Field field : declaredFields) {
+            System.out.println("\t" + field);
+        }
+    }
+}
+
 class StudentOne {
     private String name;
     private int rollName;
@@ -43,26 +64,4 @@ class StudentOne {
     public void setRollName(int rollName) {
         this.rollName = rollName;
     }
-}
-
-public class LoadedClassDetailsDemo {
-
-    @SuppressWarnings("rawtypes")
-    public static void main(String[] args) throws ClassNotFoundException {
-        // Class student = Student.class;
-        Class student = Class.forName("com.bhuwan.java.jvm.loading.StudentOne");
-        Method[] declaredMethods = student.getDeclaredMethods();
-        for (Method method : declaredMethods) {
-            System.out.println("Method Names:");
-            System.out.print("\t" + method);
-        }
-
-        System.out.println();
-        Field[] declaredFields = student.getDeclaredFields();
-        for (Field field : declaredFields) {
-            System.out.println("Fields:");
-            System.out.print("\t" + field);
-        }
-    }
-
 }

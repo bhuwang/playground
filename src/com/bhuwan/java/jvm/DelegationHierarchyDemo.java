@@ -10,7 +10,7 @@ import java.net.URLClassLoader;
  * @author bhuwan
  *
  */
-public class DelegationDemo {
+public class DelegationHierarchyDemo {
 
     /**
      * @param args
