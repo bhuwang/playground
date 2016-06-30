@@ -28,9 +28,11 @@ public class GenericsMethods {
         // above statement can be written simply as
         log.info("isEqualFirst:: " + isEqual);
         isEqual = GenericsMethods.isEqual(g1, g2);
-        // This feature, known as type inference, allows you to invoke a generic
-        // method as an ordinary method, without specifying a type between angle
-        // brackets. Compiler will infer the type that is needed
+
+        /**
+         * This feature, known as type inference, allows you to invoke a generic method as an ordinary method, without specifying a type
+         * between angle brackets. Compiler will infer the type that is needed
+         */
         log.info("isEqualSecond:: " + isEqual);
     }
 

@@ -15,6 +15,8 @@ public class PhantomReferenceDemo {
     /**
      * Use case: metadata
      * 
+     * Sometimes used instead of finalizer method
+     * 
      * @param args
      */
     public static void main(String[] args) {
@@ -33,7 +35,7 @@ public class PhantomReferenceDemo {
         // nullify strong reference
         person = null;
         Runtime.getRuntime().gc();
-        
+
         System.out.println(pr.isEnqueued());
 
     }

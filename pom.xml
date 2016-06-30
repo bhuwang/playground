@@ -44,5 +44,11 @@
 			<artifactId>postgresql</artifactId>
 			<version>9.1-901-1.jdbc4</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.alexkasko.unsafe/unsafe-tools -->
+		<dependency>
+			<groupId>com.alexkasko.unsafe</groupId>
+			<artifactId>unsafe-tools</artifactId>
+			<version>1.4.4</version>
+		</dependency>
 	</dependencies>
 </project>

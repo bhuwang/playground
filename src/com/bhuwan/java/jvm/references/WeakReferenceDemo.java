@@ -25,11 +25,11 @@ public class WeakReferenceDemo {
 
         person = null;
         p1 = null;
-        // again p2 is a strong referecne from weak reference.
+        // again p2 is a strong reference from weak reference.
         Person p2 = wr.get();
         System.out.println(p2);
 
-        // after this there will be no strong reference.
+        // once the gc runs on weak ref, then there will be no strong reference.
         p2 = null;
         System.gc();
         Person p3 = wr.get();

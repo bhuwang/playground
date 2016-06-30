@@ -27,6 +27,7 @@ public class WildCardDemo {
     }
 
     // Within the method we can't add anything to the list except null because we don't know the type exactly.
+    // this type of methods are best suitable for read only operation not for write operation.
     public void methodTwo(ArrayList<? extends Double> t) {
         // t.add(10);
         // t.add(23.10);

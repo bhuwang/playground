@@ -20,7 +20,7 @@ public class GenericsUpperBounded {
     }
 
     public static void main(String[] args) {
-        List<Number> ints = new ArrayList<>();
+        List<Integer> ints = new ArrayList<>();
         ints.add(3);
         ints.add(5);
         ints.add(10);
@@ -28,6 +28,12 @@ public class GenericsUpperBounded {
         System.out.println("Sum of ints=" + sum);
     }
 
+    /**
+     * This method can accept Number and its all child classes
+     * 
+     * @param list
+     * @return
+     */
     public static double sumWithWildCard(List<? extends Number> list) {
         double sum = 0;
         for (Number n : list) {

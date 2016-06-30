@@ -25,11 +25,11 @@ public class SoftReferenceDemo {
 
         person = null;
         p1 = null;
-        // again p2 is a strong referecne from weak reference.
+        // again p2 is a strong referecne from soft reference.
         PersonClass p2 = sr.get();
         System.out.println(p2);
 
-        // after this there will be no strong reference.
+        // even the gc runs on soft ref, the object will not GCed until memory pressure.
         p2 = null;
         System.gc();
         PersonClass p3 = sr.get();

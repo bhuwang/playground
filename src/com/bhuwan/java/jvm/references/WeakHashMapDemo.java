@@ -23,14 +23,21 @@ public class WeakHashMapDemo {
         weakHashMap.put(bhuwan, new PersonMetaData());
 
         // get person data by person object and you will get strong reference.
-        // PersonMetaData p1 = weakHashMap.get(bhuwan);
-        // System.out.println(p1);
+        PersonMetaData p1 = weakHashMap.get(bhuwan);
+        System.out.println(p1);
 
         // make strong reference available for gc
         bhuwan = null;
+        p1 = null;
 
         // run garbage collector
-        // Runtime.getRuntime().gc();
+        System.gc();
+
+        if (weakHashMap.containsValue(p1)) {
+            System.out.println("Key still exists");
+        } else {
+            System.out.println("Key gone");
+        }
 
         // check if the value exists and display the result.
         System.out.println(weakHashMap.size());

@@ -17,7 +17,9 @@ public class MethodLevelGenericsDemo {
     }
 
     /**
-     * you have to declare the type <T> just before return type in case of paraterimized method.
+     * you have to declare the type <T> just before return type in case of parameterized method.
+     * 
+     * @param <T>
      * 
      * @param t
      */

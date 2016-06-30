@@ -12,6 +12,7 @@ import java.util.List;
 public class GenericsLowerBounded {
 
     public static void main(String[] args) {
+        // it only accepts Number or Object type
         List<Number> ints = new ArrayList<>();
         ints.add(3);
         ints.add(5);
@@ -20,10 +21,16 @@ public class GenericsLowerBounded {
         System.out.println("Sum of ints=" + sum);
     }
 
+    /**
+     * This method accepts type Number and its parent class.
+     * 
+     * @param list
+     * @return
+     */
     public static double sumWithWildCard(List<? super Number> list) {
         double sum = 0;
         for (Object n : list) {
-            sum += (Integer)n;
+            sum += (Integer) n;
         }
         return sum;
     }
