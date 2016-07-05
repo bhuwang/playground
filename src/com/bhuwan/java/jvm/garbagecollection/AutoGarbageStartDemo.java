@@ -15,11 +15,11 @@ public class AutoGarbageStartDemo {
      * @param args
      */
     public static void main(String[] args) {
-        for (int i = 0; i < 10000000; i++) {
+        for (int i = 0; i < 100_000_000; i++) {
             // try changing the value of i ranging from 1000 to 10000000 to see the result.
             // if there is a shortage of memory GC will automatically gets called.
             AutoGarbageStartDemo name = new AutoGarbageStartDemo();
-            name = null;
+            // name = null;
         }
     }
 

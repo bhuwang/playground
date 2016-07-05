@@ -28,7 +28,7 @@ public class HashMapDemo {
         System.out.println(students.put(102, "Suman Bhandari"));
         // Since Bhuwan Gautam is going to replace with Kiran Gautam, put returns the old value.
         System.out.println(students.put(101, "Kiran Guatam"));
-        System.out.println(students.put(103, "Niraj Acharya"));
+        System.out.println(students.put(103, "Suman Bhandari"));
         System.out.println();
         System.out.println(students);
 

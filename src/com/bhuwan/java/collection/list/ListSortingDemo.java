@@ -30,6 +30,9 @@ public class ListSortingDemo {
         // list.add(null);
         System.out.println("Original List: " + list);
         Collections.reverse(list);
+
+        System.out.println("Original natural order desc sort: ");
+        Collections.sort(list, Comparator.reverseOrder());
         System.out.println("Reverse of original list: " + list);
 
         // default sorting, natural order
