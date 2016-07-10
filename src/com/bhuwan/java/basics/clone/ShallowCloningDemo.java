@@ -21,13 +21,13 @@ public class ShallowCloningDemo {
      * @throws CloneNotSupportedException
      */
     public static void main(String[] args) throws CloneNotSupportedException {
-        CloneCat cat = new CloneCat(10);
-        CloneDog dog = new CloneDog(cat, 20);
+        Cat cat = new Cat(10);
+        Dog dog = new Dog(cat, 20);
         // clone the dog object and change the cat internal variable.
-        CloneDog dog2 = (CloneDog) dog.clone();
+        Dog clonedDog = (Dog) dog.clone();
         System.out.println(dog.i + " : " + dog.c.i);
-        dog2.i = 888;
-        dog2.c.i = 999;
+        clonedDog.i = 888;
+        clonedDog.c.i = 999;
         System.out.println(dog.i + " : " + dog.c.i);
     }
 

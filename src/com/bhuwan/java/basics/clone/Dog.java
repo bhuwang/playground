@@ -7,11 +7,11 @@ package com.bhuwan.java.basics.clone;
  * @author bhuwan
  *
  */
-public class CloneDog implements Cloneable {
-    CloneCat c;
+public class Dog implements Cloneable {
+    Cat c;
     int i;
 
-    public CloneDog(CloneCat c, int i) {
+    public Dog(Cat c, int i) {
         this.c = c;
         this.i = i;
     }

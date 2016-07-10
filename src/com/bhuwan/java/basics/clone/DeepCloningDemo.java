@@ -22,7 +22,7 @@ public class DeepCloningDemo {
      * @throws CloneNotSupportedException
      */
     public static void main(String[] args) throws CloneNotSupportedException {
-        CloneCat cat = new CloneCat(10);
+        Cat cat = new Cat(10);
         DeepCloneDog dog = new DeepCloneDog(cat, 20);
         // clone the dog object and change the cat internal variable.
         DeepCloneDog dog2 = (DeepCloneDog) dog.clone();
@@ -35,17 +35,17 @@ public class DeepCloningDemo {
 }
 
 class DeepCloneDog implements Cloneable {
-    CloneCat c;
+    Cat c;
     int i;
 
-    public DeepCloneDog(CloneCat c, int i) {
+    public DeepCloneDog(Cat c, int i) {
         this.c = c;
         this.i = i;
     }
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        CloneCat cat = new CloneCat(c.i);
+        Cat cat = new Cat(c.i);
         DeepCloneDog dog = new DeepCloneDog(cat, i);
         return dog;
     }
