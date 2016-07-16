@@ -17,7 +17,7 @@ public class GenericsAndInheritance {
         // this is not same with generic
         // object = nameString;
 
-        InheritanceDemo3<String> abc = new InheritanceDemo3();
+        InheritanceDemo4<CustomRunnableDemo> abc = new InheritanceDemo4();
         InheritanceDemo3<Object> xyz = new InheritanceDemo3();
     }
 }
@@ -37,6 +37,11 @@ class InheritanceDemo2<T extends Number & Comparable & Runnable> {
 
 }
 
+// syntax three
+class InheritanceDemo4<T extends Runnable> {
+
+}
+
 /**
  * syntax four
  * 
@@ -46,6 +51,10 @@ class InheritanceDemo2<T extends Number & Comparable & Runnable> {
 // }
 
 // syntax five
-class InheritanceDemo3<T>{
-    
+class InheritanceDemo3<T> {
+
+}
+
+class CustomRunnableDemo extends Thread {
+
 }

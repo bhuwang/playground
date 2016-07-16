@@ -13,7 +13,7 @@ public class GenericsLowerBounded {
 
     public static void main(String[] args) {
         // it only accepts Number or Object type
-        List<Number> ints = new ArrayList<>();
+        List<Object> ints = new ArrayList<>();
         ints.add(3);
         ints.add(5);
         ints.add(10);

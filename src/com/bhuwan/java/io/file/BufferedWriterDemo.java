@@ -19,9 +19,9 @@ public class BufferedWriterDemo {
      */
     public static void main(String[] args) throws IOException {
         try (BufferedWriter bw = new BufferedWriter(new FileWriter("file_writer_demo.txt", true));
-                BufferedWriter bw1 = new BufferedWriter(new FileWriter("file_writer_demo.txt"));
+                BufferedWriter bw1 = new BufferedWriter(new FileWriter("file_writer_demo1.txt"));
                 // initializing double buffered writer object.
-                BufferedWriter bw2 = new BufferedWriter(new BufferedWriter(new FileWriter("file_writer_demo.txt")));) {
+                BufferedWriter bw2 = new BufferedWriter(new BufferedWriter(new FileWriter("file_writer_demo1.txt")));) {
             bw.write(66);
             bw.write("huwan");
             bw.newLine();

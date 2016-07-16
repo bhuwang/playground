@@ -11,7 +11,7 @@ import java.util.logging.Logger;
  */
 public class UsingGenerics {
 
-    private static final Logger log = Logger.getLogger(WithoutUsingGenerics.class.getName());
+    private static final Logger log = Logger.getLogger(UsingGenerics.class.getName());
 
     public static void main(String args[]) {
 
@@ -20,10 +20,10 @@ public class UsingGenerics {
 
         // add marks
         marksList.add(94.0);
-        //marksList.add("Hundred");
+        // marksList.add("Hundred");
         marksList.add(90.0);
-        //compile-time error
-        //marksList.add(72);
+        // compile-time error
+        // marksList.add(72);
 
         log.info("Percentage:: " + calculatePercentage(marksList));
     }

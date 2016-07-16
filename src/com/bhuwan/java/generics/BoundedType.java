@@ -19,7 +19,7 @@ public class BoundedType {
     public static <T extends Comparable<T>> int compare(T t1, T t2) {
         return t1.compareTo(t2);
     }
-    
+
     @SuppressWarnings("unused")
     public static void main(String[] args) {
         String name = "Bhuwan";

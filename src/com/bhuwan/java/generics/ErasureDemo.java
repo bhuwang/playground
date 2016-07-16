@@ -26,4 +26,22 @@ public class ErasureDemo {
     // public static void One(ArrayList<Integer> s) {
     // }
 
+    public <T extends Happy> T foo(T emotion) {
+        // do something
+        return null;
+    }
+
+    public <T extends Sad> T foo(T emotion) {
+        return null;
+        // do something else
+    }
+
+}
+
+class Happy {
+
+}
+
+class Sad {
+
 }
