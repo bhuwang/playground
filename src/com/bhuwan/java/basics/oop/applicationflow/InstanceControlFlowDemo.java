@@ -1,14 +1,13 @@
 /**
- * 
+ *
  */
 package com.bhuwan.java.basics.oop.applicationflow;
 
 /**
  * Here all we have declared is instance blocks. Since we have not created any object then there is no chance of executing instance block.
  * Hence the output only be "Main method."
- * 
- * @author bhuwan
  *
+ * @author bhuwan
  */
 public class InstanceControlFlowDemo {
 

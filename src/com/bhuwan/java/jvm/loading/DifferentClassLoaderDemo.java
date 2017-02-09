@@ -17,7 +17,7 @@ public class DifferentClassLoaderDemo {
          * Bootstrap class loader
          */
         // it should return null since it is not implemented in java.
-        System.out.println(String.class.getClassLoader());
+        System.out.println(Double.class.getClassLoader());
 
         /*
          * Ext class loader

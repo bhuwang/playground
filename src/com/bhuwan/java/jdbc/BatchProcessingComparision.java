@@ -27,8 +27,7 @@ public class BatchProcessingComparision {
             batchProcessingWithStatement(con);
             batchProcessingWithPreparedStatement(con);
             LOGGER.info("Execution Completed Successfully........................");
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
             LOGGER.info("Excepton occured while processing data." + e.getMessage() + " :: " + e.getClass());
         }
@@ -37,9 +36,8 @@ public class BatchProcessingComparision {
     private static void processingWithStatement(Connection con) throws SQLException {
         try (Statement stmt = con.createStatement();) {
             long start = System.currentTimeMillis();
-            for (int i = 0; i < 500; i++) {
-                String query = "insert into user(username, password, fullname) values ('username" + i
-                        + "','password','fullname')";
+            for (int i = 0; i < 1200; i++) {
+                String query = "insert into user(username, password, fullname) values ('username" + i + "','password','fullname')";
                 stmt.executeUpdate(query);
             }
             System.out.println("Processing with Statement - Time Taken=" + (System.currentTimeMillis() - start));
@@ -53,11 +51,10 @@ public class BatchProcessingComparision {
             stmt.setString(1, "username");
             stmt.setString(2, "password");
             stmt.setString(3, "fullname");
-            for (int i = 0; i < 500; i++) {
+            for (int i = 0; i < 1200; i++) {
                 stmt.executeUpdate();
             }
-            System.out
-                    .println("Processing with PreparedStatement - Time Taken=" + (System.currentTimeMillis() - start));
+            System.out.println("Processing with PreparedStatement - Time Taken=" + (System.currentTimeMillis() - start));
         }
 
     }
@@ -65,9 +62,8 @@ public class BatchProcessingComparision {
     private static void batchProcessingWithStatement(Connection con) throws SQLException {
         try (Statement stmt = con.createStatement();) {
             long start = System.currentTimeMillis();
-            for (int i = 0; i < 500; i++) {
-                String query = "insert into user(username, password, fullname) values ('username" + i
-                        + "','password','fullname')";
+            for (int i = 0; i < 1200; i++) {
+                String query = "insert into user(username, password, fullname) values ('username" + i + "','password','fullname')";
                 stmt.addBatch(query);
                 if (i % 100 == 0) {
                     stmt.executeBatch();
@@ -82,8 +78,8 @@ public class BatchProcessingComparision {
         String sql = "insert into user(username, password, fullname) values (?,?,?)";
         try (PreparedStatement stmt = con.prepareStatement(sql);) {
             long start = System.currentTimeMillis();
-            for (int i = 0; i < 500; i++) {
-                stmt.setString(1, "username"+i);
+            for (int i = 0; i < 1200; i++) {
+                stmt.setString(1, "username" + i);
                 stmt.setString(2, "password");
                 stmt.setString(3, "fullname");
                 stmt.addBatch();
@@ -91,8 +87,7 @@ public class BatchProcessingComparision {
                     stmt.executeBatch();
                 }
             }
-            System.out.println("Batch Processing with PreparedStatement - Time Taken="
-                    + (System.currentTimeMillis() - start));
+            System.out.println("Batch Processing with PreparedStatement - Time Taken=" + (System.currentTimeMillis() - start));
         }
 
     }

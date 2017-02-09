@@ -16,7 +16,7 @@ public class DBConnection {
     private static final Logger LOGGER = Logger.getLogger(DBConnection.class.getName());
 
     private static final String MYSQL_DRIVER = "com.mysql.jdbc.Driver";
-    // private static final String MYSQL_CONNECTION_STRING="jdbc:mysql://localhost:3306/playground";
+    // private static final String MYSQL_CONNECTION_STRING = "jdbc:mysql://localhost:3306/playground";
     private static final String MYSQL_CONNECTION_STRING = "jdbc:mysql://localhost:3306/playground?rewriteBatchedStatements=true";
     private static final String USERNAME = "root";
     private static final String PASSWORD = "liferay";
@@ -35,9 +35,9 @@ public class DBConnection {
     public static Connection getMySqlConnection() {
         Connection connection = null;
         try {
-            Class.forName(MYSQL_DRIVER);
+            // Class.forName(MYSQL_DRIVER);
             connection = DriverManager.getConnection(MYSQL_CONNECTION_STRING, USERNAME, PASSWORD);
-        } catch (SQLException | ClassNotFoundException e) {
+        } catch (SQLException e) {
             LOGGER.log(Level.SEVERE,
                     "DBConnection#getConnection exception occured - Class: " + e.getClass() + " message: " + e.getMessage());
         }

@@ -19,7 +19,7 @@ public class ConnectionDemo {
      */
     public static void main(String[] args) {
         try (Connection con = DBConnection.getMySqlConnection(); Statement stmt = con.createStatement();) {
-            stmt.execute("create table tbl_one(id int primary key)");
+            stmt.execute("create table tbl_one_onee(id int primary key)");
             LOGGER.info("Table created successfully");
         } catch (SQLException e) {
             e.printStackTrace();

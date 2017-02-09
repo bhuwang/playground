@@ -15,7 +15,7 @@ public class OverridingDemo {
      * Method Hiding: Only hiding the parent method by child method (Both the methods are available). You can get child method by child reference 
      * and parent method by parent reference.
      *  
-     * Thump Rules:
+     * Thumb Rules:
      * 1. In overriding method resolution is always based on runtime object.
      * 2. In overloading method resolution is always based on reference object.
      * </pre>
@@ -55,5 +55,13 @@ class ChildClass extends ParentClass {
     @Override
     public void marriage() {
         System.out.println("Marriage with Priyanka Karki.");
+    }
+}
+
+class AnotherChildClass extends ParentClass {
+
+    @Override
+    public void marriage() {
+        System.out.println("Marriage with XYZ.");
     }
 }
