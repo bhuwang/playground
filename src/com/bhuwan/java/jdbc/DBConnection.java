@@ -28,7 +28,7 @@ public class DBConnection {
      * @param args
      */
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
+        getSqlLiteConnection();
 
     }
 
@@ -50,6 +50,18 @@ public class DBConnection {
             Class.forName(ORACLE_DRIVER);
             connection = DriverManager.getConnection(ORACLE_CONNECTION_STRING, USERNAME, PASSWORD);
         } catch (ClassNotFoundException | SQLException e) {
+            LOGGER.log(Level.SEVERE,
+                    "DBConnection#getOracleConnection exception occured - Class: " + e.getClass() + " message: " + e.getMessage());
+        }
+        return connection;
+    }
+
+    public static Connection getSqlLiteConnection() {
+        Connection connection = null;
+        try {
+            connection = DriverManager.getConnection("jdbc:sqlite:/home/bhuwan/test.db");
+            System.out.println("Connected..............");
+        } catch (SQLException e) {
             LOGGER.log(Level.SEVERE,
                     "DBConnection#getOracleConnection exception occured - Class: " + e.getClass() + " message: " + e.getMessage());
         }
