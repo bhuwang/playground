@@ -3,7 +3,7 @@
  */
 package com.bhuwan.java.collection.map;
 
-import java.util.HashMap;
+import java.util.IdentityHashMap;
 import java.util.Map;
 
 /**
@@ -16,7 +16,7 @@ public class IdentityHashMapDemo {
      * @param args
      */
     public static void main(String[] args) {
-        Map<Integer, String> students = new HashMap<>();
+        Map<Integer, String> students = new IdentityHashMap<>();
         students.put(new Integer(101), "Sudarshan Wagle");
         students.put(new Integer(102), "Utsukta Basnet");
         students.put(new Integer(103), "Prisha Gautam");

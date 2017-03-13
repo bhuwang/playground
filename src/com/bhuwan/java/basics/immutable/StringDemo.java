@@ -20,13 +20,13 @@ public class StringDemo {
         // name = name.concat(" My Address 2");
         // System.out.println("name: " + name);
 
-        // immutable class
+        // mutable class
         StringBuffer name1 = new StringBuffer("Bhuwan Gautam2");
         System.out.println("name: " + name1);
         name1.append(" My Address");
         System.out.println("name: " + name1);
 
-        // immutable class
+        // mutable class
         StringBuilder name2 = new StringBuilder("Bhuwan Gautam3");
         System.out.println("name: " + name2);
         name2.append(" My Address");
