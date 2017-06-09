@@ -13,7 +13,7 @@ public class ParseAnnotation {
     public static void main(String[] args) {
         try {
             System.out.println("Outside............");
-            for (Method method : Class.forName("com.lftechnology.java.basics.annotation.AnnotationsDemo").getMethods()) {
+            for (Method method : Class.forName("com.bhuwan.java.basics.annotation.AnnotationsDemo").getMethods()) {
                 System.out.println("Inside Method....." + method);
                 if (method.isAnnotationPresent(MethodInfo.class)) {
                     System.out.println("Inside is Method Annotation present.....");
