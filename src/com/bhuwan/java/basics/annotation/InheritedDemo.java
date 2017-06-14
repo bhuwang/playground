@@ -10,7 +10,7 @@ public class InheritedDemo {
 
 }
 
-@MethodInfo(author = "Bhuwan", comments = "Comments", revision = 12)
+@MethodInfo(author = "Bhuwan", comments = "Comments", revision = 15)
 class Parent {
 
 }
