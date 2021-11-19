@@ -28,7 +28,7 @@ class ParentC {
 class ChildC extends ParentC {
     // since jdk 1.5 you can also return the child object instead of parent object.
     @Override
-    public Integer m1() {
+    public Byte m1() {
         return null;
     }
 }

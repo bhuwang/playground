@@ -15,18 +15,21 @@ public class NPEDemo {
             System.out.println("Object: " + object);// this will work
         }
         // in this case compiler will catch the issue at compile time
-       /* if (null = object) {
-            System.out.println("Object2: " + object);
-        }*/
+        // if (null = object) {
+        // System.out.println("Object2: " + object);
+        // }
         String object1 = null;
         // Same will not work other than boolean object.
-        /*if (object1 = null) {
+        /*
+         * if (object1 = null) {
+         * 
+         * }
+         */
 
-        }*/
-        
     }
-    public void displayName(){
-        
+
+    public void displayName() {
+
     }
 
 }
